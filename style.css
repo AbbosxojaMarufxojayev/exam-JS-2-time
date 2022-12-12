@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: auto;
+}
+.banner1{
+    width: 100%;
+    height: 700px;
+    background: url("./img/2023-nissan-leaf-and-ariya-d-v3.jpg") no-repeat center/cover;
+    overflow: hidden;
+}
+.navbar{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1%;
+}
+.navbar_white{
+    background-color: #f1f1f1;
+}
+.collection1{
+    display: flex;
+    list-style: none;
+    margin-left: 140px;
+    align-items: center;
+}
+.collection1 .item1:hover{
+    border-bottom: 3px solid #f1f1f1;
+}
+.collection1 .item2:hover{
+    border-bottom: 3px solid #f1f1f1;
+}
+.collection1 .item3:hover{
+    border-bottom: 3px solid #f1f1f1;
+}
+.collection12{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.collection12 .item12:hover{
+    cursor: pointer;
+}
+.item12{
+    margin-left: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.item1{
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 30px;
+    color: #fff;
+}
+.item2{
+    margin-left: 50px;
+    font-weight: 100;
+    font-size: 14px;
+    color: #fff;
+}
+.item3 button{
+    padding: 13px 20px;
+    border: 2px solid #fff;
+    background:rgba(255, 255, 255, 0);
+    color: #fff;
+}
+.item2 button:hover{
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+.item1,
+.item2,
+.item3:hover{
+    cursor: pointer;
+}
+.items_red{
+    border-bottom: 3px solid rgb(192, 53, 53);
+}
+.item1 i,
+.item2 i{
+    font-size: 13px;
+}
+.item3{
+    margin-left: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.peak{
+    font-size: 5vw;
+    margin-left: 10%;
+    margin-top: 40px;
+    font-family: initial;
+    color: #fff;
+}
+.say{
+    margin-left: 10%;
+    width: 250px;
+    margin-top: 30px;
+    color: #fff;
+}
+.explore{
+    padding: 15px 23px;
+    margin-left: 10%;
+    background-color: red;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+}
+.explore:hover{
+    cursor: pointer;
+    background-color: rgb(165, 72, 72);
+}
+.intelligent{
+    margin-left: 60%;
+    transform: translateY(280px);
+}
+.our{
+    font-weight: 100;
+    margin: 50px;
+    font-size: 36px;
+}
+.collection2{
+    margin-left: 8%;
+    display: flex;
+    list-style: none;
+}
+.item4{
+    margin-left: 110px;
+    font-size: 19px;
+    font-weight: 600;
+    transition: .3s;
+}
+.item4:hover{
+    cursor: pointer;
+    border-bottom: 3px solid black;
+}
+.vehicles_banner{
+    width: 100%;
+    height: 700px;
+}
+.vehicles_banner h1{
+    font-weight: 100;
+}
+
+.vehicles{
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: .5s;
+    display: flex; 
+    overflow: hidden;
+}
+.show__vehicle{
+    height: 830px;
+}
+.menu_side{
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 100%;
+}
+.cards_side{
+    background-color: #f1f1f1;
+    width: 70%;
+    height: 100%;
+}
+.collection3{
+    list-style: none;
+    margin-left: 20%;
+    display: flex;
+}
+.item5{
+    margin-left: 60px;
+    margin-top: 60px;
+}
+.item5{
+    cursor: pointer;
+}
+.menu_side h1{
+    margin: 40px 60px;
+    font-size: 42px;
+    font-weight: 100;   
+}
+.item5 button{
+    padding: 10px 15px;
+    margin-top: -10px;
+}
+.item5 button:hover{
+    cursor: pointer;
+}
+.pre{
+    color: #fff;
+    background-color: black;
+}
+.collection4{
+    list-style: none;
+    margin-top: 50px;
+    margin-left: 16%;
+}
+.item6{
+    margin-top: 30px;
+    transition: .3s;
+}
+.item6:hover{
+    cursor: pointer;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.boxes{
+    width: 300px;
+    height: 220px;
+    transition: .15s;
+}
+.boxes:hover{
+    background-color: #fff;
+    border-bottom: 4px solid red;
+}
+.picture_car{
+    width: 100%;
+    height: 65%;
+}
+.description{
+    width: 100%;
+    height: 35%;
+    padding: 18px 18px;
+}
+.picture_car img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.car_name{
+    font-weight: 600;
+}
+.msrp{
+    font-size: 11px;
+    margin-top: 2px;
+}
+.price{
+    font-size: 13px;
+    margin-top: 2px;
+}
+.shown{
+    font-size: 12px;
+    width: 60px;
+    opacity: 0.5;
+    transform: translateX(180px);
+    margin-top: -30px;
+}
+.shop_at_home__modal{
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: .4s;
+    overflow: hidden;
+}
+.shop_at_home_show{
+    height: 610px;
+    display: flex;
+}
+.first_part{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+}
+.fa-bars{
+    display: none;
+}
+.smth{
+    display: none;
+}
+.second_part{
+    width: 20%;
+    height: 100%;
+    background-color: blue;
+}
+.third_part{
+    width: 60%;
+    height: 100%;
+    background-color: red;
+}
+.banner2{
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+}   
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-left: 10%;
+}
+.cards{
+    width: 270px;
+    height: 180px;
+    transition: .15s;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.cards:hover{
+    background-color: #fff;
+    border-bottom: 4px solid red;
+    cursor: pointer;
+}
+.picture_car{
+    width: 100%;
+    height: 55%;
+}
+.description{
+    width: 100%;
+    height: 35%;
+    padding: 18px 18px;
+}
+.picture_car img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.car_name{
+    font-weight: 600;
+}
+.msrp{
+    font-size: 11px;
+    margin-top: 2px;
+}
+.price{
+    font-size: 13px;
+    margin-top: 2px;
+}
+.shown{
+    font-size: 12px;
+    width: 60px;
+    opacity: 0.5;
+    transform: translateX(180px);
+    margin-top: -30px;
+}
+.banner3{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.icons_banner{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    border: 2px solid gray;
+    margin-left: 10px;
+    margin-top: 30px;
+    transition: .3s;
+}
+.icons_banner i{
+    font-size: 35px;
+}
+.icons_banner:hover{
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+.banner4{
+    width: 100%;
+    height: 680px;
+    background: url("./img/nissan-heisman-house-v3.jpg") no-repeat center/cover;
+    padding: 5% 10%;
+    margin-top: 40px;
+}
+.go{
+    font-weight: 700;
+}
+.thats{
+    font-weight: 100;
+    font-size: 50px;
+    margin-top: 5px;
+}
+.the{
+    width: 500px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+.visit{
+    padding: 15px 23px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    font-weight: 800;
+}
+.visit:hover{
+    cursor: pointer;
+    background-color: rgb(165, 72, 72);
+}
+.banner5{
+    width: 100%;
+    height: auto;
+    padding: 5% 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.big_divs{
+    width: 100%;
+    height: 600px;
+}
+.picture__part{
+    width: 100%;
+    height: 65%;
+}
+.picture__part img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.word__part{
+    width: 100%;
+    height: 35%;
+}
+.nissan{
+    margin-top: -30px;
+    margin-left: 10px;
+    font-weight: 800;
+    color: #fff;
+}
+.ride{
+    margin-top: -30px;
+    margin-left: 10px;
+    font-weight: 800;
+    color: #fff;
+}
+.thrill{
+    margin-top: -30px;
+    margin-left: 10px;
+    font-weight: 800;
+    color: #fff;
+}
+.search__pre{
+    font-size: 19px;
+    font-weight: 700;
+    color: #3f3a3a;
+    margin: 20px 10px;
+}
+.ready{
+    font-size: 13px;
+    font-weight: 700;
+    color: #666363;
+    margin: 40px 10px;
+}
+.explore__next{
+    padding: 15px 40px;
+    margin-left: 10px;
+    transition: .25s;
+}
+.explore__next:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.banner6{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    background-color: #f1f1f1;
+    padding: 5% 5%;
+}
+.big_divs2{
+    width: 100%;
+    height: 500px;
+}
+.picture__part2{
+    width: 100%;
+    height: 70%;
+    padding: 5% 3%;
+}
+.picture__part2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.description__part{
+    width: 100%;
+    height: 30%;
+    padding: 1% 3%;
+}
+.shop{
+    font-size: 2.5vw;
+    width: 400px;
+    margin-top: 40px;
+}
+.available{
+    opacity: 0.5;
+    margin-top: 100px;
+}
+.get__started{
+    padding: 10px 50px;
+    background-color: black;
+    color: #fff;
+}
+.get__started:hover{
+    background-color: rgb(70, 69, 69);
+    cursor: pointer;
+}
+.something{
+    font-size: 15px;
+    font-weight: 700;
+}
+.bring{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 7px;
+    opacity: 0.7;
+}
+.available__now{
+    font-size: 13px;
+    opacity: 0.6;
+    margin-top: 6px;
+}
+.explore__next1{
+    padding: 15px 40px;
+    transition: .25s;
+    margin-top: 7px;
+}
+.explore__next1:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}

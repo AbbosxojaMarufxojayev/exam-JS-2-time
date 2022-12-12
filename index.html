@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+</head>
+<body>
+    <div class="banner1">
+        <nav class="navbar">
+            <img src="./img/nissan-logo-white_v4.svg" alt="">
+            <ul class="collection1">
+                <li onclick="openVehicle()" id="vehicles" class="item1">Vehicles <i class="fa-solid fa-chevron-down"></i></li>
+                <li onclick="openShopAt()" id="shop_at_home" class="item1">Shop At Home <i class="fa-solid fa-chevron-down"></i></li>
+                <li class="item1">Discover Nissan <i class="fa-solid fa-chevron-down"></i></li>
+                <li class="item2">Owners <i class="fa-solid fa-chevron-down"></i></li>
+                <li class="item2">Locate Dealer <i class="fa-solid fa-chevron-down"></i></li>
+                <li class="item3"><button>Build & Price <i class="fa-solid fa-chevron-right"></i></button></li>
+                <li class="item3"><i class="fa-solid fa-message"></i></li>
+                <li class="item3">EN</li>
+                <li class="item3"><i class="fa-solid fa-magnifying-glass"></i></li>
+            </ul>
+            <ul class="collection12">
+                <li class="item12"><i class="fa-solid fa-gear smth"></i></li>
+                <li class="item12"><i class="fa-solid fa-bars"></i></li>
+            </ul>
+        </nav>
+        <div class="vehicles">
+            <div class="menu_side">
+                <h1>Vehicles</h1>
+                <ul class="collection4">
+                    <li class="item6">Crossovers & SUVs</li>
+                    <li class="item6">Cars</li>
+                    <li class="item6">Trucks</li>
+                    <li class="item6">Sports Cars</li>
+                    <li class="item6">Electric Vehicles</li>
+                    <li class="item6">NISMO <i class="fa-solid fa-chevron-right"></i></li>
+                    <li class="item6">Future & Concept <i class="fa-solid fa-chevron-right"></i></li>
+                </ul>
+            </div>
+            <div class="cards_side">        
+                <ul class="collection3">
+                    <li class="item5">Bussiness & Fleet <i class="fa-solid fa-chevron-right"></i></li>
+                    <li class="item5">See all vehicles <i class="fa-solid fa-chevron-right"></i></li>
+                    <li class="item5"><button class="pre">Certified Pre-Owned <i class="fa-solid fa-chevron-right"></i></button></li>
+                    <li class="item5"><button onclick="clearVehicleX()" class="close">X</button></li>
+                </ul>
+                <div class="container">
+                    <div class="boxes">
+                        <div class="picture_car"><img src="./img/model-2023-kicks-sr-aspen-white-tricoat.png.ximg.l_3_m.smart.png" alt=""></div>
+                        <div class="description">
+                            <p class="car_name">Kicks</p>
+                            <p class="msrp">Starting MSRP</p>
+                            <p class="price">$20,290*</p>
+                            <p class="shown">As Shown $22,250*</p>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <div class="picture_car"><img src="./img/2022-rogue-sport-g41-sl.png.ximg.l_3_m.smart.png" alt=""></div>
+                        <div class="description">
+                            <p class="car_name">Rogue Sport</p>
+                            <p class="msrp">Starting MSRP</p>
+                            <p class="price">$24,960*</p>
+                            <p class="shown">As Shown $31,090*</p>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <div class="picture_car"><img src="./img/model-2023-rogue-platinum-two-tone-champagne-silver-metallic-super-black.png.ximg.l_3_m.smart.png" alt=""></div>
+                        <div class="description">
+                            <p class="car_name">Rogue</p>
+                            <p class="msrp">Starting MSRP</p>
+                            <p class="price">$27,360*</p>
+                            <p class="shown">As Shown $38,640*</p>
+                        </div>  
+                    </div>
+                    <div class="boxes">
+                        <div class="picture_car"><img src="./img/version-2023-murano-platinum.png.ximg.l_3_m.smart.png" alt=""></div>
+                        <div class="description">
+                            <p class="car_name">Murano</p>
+                            <p class="msrp">Starting MSRP</p>
+                            <p class="price">$33,660*</p>
+                            <p class="shown">As Shown $46,910*</p>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <div class="picture_car"><img src="./img/model-2023-pathfinder-platinum-4wd-scarlet-ember-tintcoat.png.ximg.l_3_m.smart.png" alt=""></div>
+                        <div class="description">
+                            <p class="car_name">Pathfinder</p>
+                            <p class="msrp">Starting MSRP</p>
+                            <p class="price">$35,000*</p>
+                            <p class="shown">As Shown $50,660*</p>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <div class="picture_car"><img src="./img/version-2022-armada-qac-platinum.png.ximg.l_3_m.smart.png" alt=""></div>
+                        <div class="description">
+                            <p class="car_name">Armada</p>
+                            <p class="msrp">Starting MSRP</p>
+                            <p class="price">$50,400*</p>
+                            <p class="shown">As Shown $69,720*</p>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <div class="picture_car"><img src="./img/version-2021-ariya-xgj-perform.png" alt=""></div>
+                        <div class="description">
+                            <p class="car_name">ARIYA</p>
+                            <p class="msrp">Expected availability late Fall</p>
+                            <p class="price">Explore <i class="fa-solid fa-chevron-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <div class="shop_at_home__modal">
+            <div class="first_part"></div>
+            <div class="second_part"></div>
+            <div class="third_part"></div>
+        </div>
+        <p class="peak">EVs that electrify</p>
+        <p class="say">EVs don't just drive, they electrify</p>
+        <button class="explore">Explore electrification<i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    <div class="banner2">
+        <h2 class="our">Explore our vehicles</h2>
+        <ul class="collection2">
+            <li class="item4">Crossovers & SUVs</li>
+            <li class="item4">Cars</li>
+            <li class="item4">Electric</li>
+            <li class="item4">Sports Cars</li>
+            <li class="item4">Trucks</li>
+        </ul>
+        <div class="container3">
+            <div class="cards">
+                <div class="picture_car"><img src="./img/model-2023-kicks-sr-aspen-white-tricoat.png.ximg.l_3_m.smart.png" alt=""></div>
+                <div class="description">
+                    <p class="car_name">Kicks</p>
+                    <p class="msrp">Starting MSRP</p>
+                    <p class="price">$20,290*</p>
+                    <p class="shown">As Shown $22,250*</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="picture_car"><img src="./img/2022-rogue-sport-g41-sl.png.ximg.l_3_m.smart.png" alt=""></div>
+                <div class="description">
+                    <p class="car_name">Rogue Sport</p>
+                    <p class="msrp">Starting MSRP</p>
+                    <p class="price">$24,960*</p>
+                    <p class="shown">As Shown $31,090*</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="picture_car"><img src="./img/model-2023-rogue-platinum-two-tone-champagne-silver-metallic-super-black.png.ximg.l_3_m.smart.png" alt=""></div>
+                <div class="description">
+                    <p class="car_name">Rogue</p>
+                    <p class="msrp">Starting MSRP</p>
+                    <p class="price">$27,360*</p>
+                    <p class="shown">As Shown $38,640*</p>
+                </div>  
+            </div>
+            <div class="cards">
+                <div class="picture_car"><img src="./img/version-2023-murano-platinum.png.ximg.l_3_m.smart.png" alt=""></div>
+                <div class="description">
+                    <p class="car_name">Murano</p>
+                    <p class="msrp">Starting MSRP</p>
+                    <p class="price">$33,660*</p>
+                    <p class="shown">As Shown $46,910*</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="picture_car"><img src="./img/model-2023-pathfinder-platinum-4wd-scarlet-ember-tintcoat.png.ximg.l_3_m.smart.png" alt=""></div>
+                <div class="description">
+                    <p class="car_name">Pathfinder</p>
+                    <p class="msrp">Starting MSRP</p>
+                    <p class="price">$35,000*</p>
+                    <p class="shown">As Shown $50,660*</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="picture_car"><img src="./img/version-2022-armada-qac-platinum.png.ximg.l_3_m.smart.png" alt=""></div>
+                <div class="description">
+                    <p class="car_name">Armada</p>
+                    <p class="msrp">Starting MSRP</p>
+                    <p class="price">$50,400*</p>
+                    <p class="shown">As Shown $69,720*</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="picture_car"><img src="./img/version-2021-ariya-xgj-perform.png" alt=""></div>
+                <div class="description">
+                    <p class="car_name">ARIYA</p>
+                    <p class="msrp">Expected availability late Fall</p>
+                    <p class="price">Explore <i class="fa-solid fa-chevron-right"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner3">
+        <div class="icons_banner">
+            <i class="fa-solid fa-gear"></i>
+            <p>Build Your Nissan</p>
+        </div>
+        <div class="icons_banner">
+            <i class="fa-solid fa-table-list"></i>
+            <p>View a Brochure</p>
+        </div>
+        <div class="icons_banner">
+            <i class="fa-solid fa-clone"></i>
+            <p>Search Inventory</p>
+        </div>
+        <div class="icons_banner">
+            <i class="fa-solid fa-clipboard"></i>
+            <p>View Offers</p>
+        </div>
+    </div>
+    <div class="banner4">
+        <p class="go">GO HEAD-TO-HEAD.</p>
+        <p class="thats">That's how you Heisman.</p>
+        <p class="the">The boys are back for a whole new season of Heisman House shenanigans. This year, fans can go head-to-head with them in an all-out competition to determine who’s the best of the best. Now, that’s how you Heisman!</p>
+        <button class="visit">Visit the Heisman House <i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    <div class="banner5">
+        <div class="big_divs">
+            <div class="picture__part"><img src="./img/2022-rogue-steering-wheel_v2.jpg" alt=""></div>
+            <div class="word__part">
+                <p class="nissan">NISSAN CERTIFIED</p>
+                <p class="search__pre">Search Pre-Owned Inventory</p>
+                <p class="ready">Ready to hit the road at your local dealer.</p>
+                <button class="explore__next">Explore <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="big_divs">
+            <div class="picture__part"><img src="./img/2023-nissan-ariya-electric-crossover-suv-d-1.jpg" alt=""></div>
+            <div class="word__part">
+                <p class="ride">YOUR RIDE INTO THE ELECTRIC FUTURE</p>
+                <p class="search__pre">The All-New 2023 Nissan ARIYA</p>
+                <p class="ready">Expected availability for purchase late Fall 2022</p>
+                <button class="explore__next">Explore <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="big_divs">
+            <div class="picture__part"><img src="./img/nissan-thrill-of-the-drive-year-end-sale-v2.webp" alt=""></div>
+            <div class="word__part">
+                <p class="thrill">THE NISSAN THRILL OF THE DRIVE EVENT</p>
+                <p class="search__pre">This Holiday Season, Find Joy Behind the Wheel</p>
+                <button class="explore__next">View Offers <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="banner6">
+        <div class="big_divs2">
+            <div class="picture__part2">
+                <p>NISSAN<span style="color: red;">@HOME</span></p>
+                <p class="shop">SHOP, DRIVE, and BUY a new or Certified Pre-owned Nissan online.</p>
+                <p class="available">Available at participating dealers [*]</p>
+            </div>
+            <div class="description__part"><button class="get__started">Get Started                  <i class="fa-solid fa-chevron-right"></i></button></div>
+        </div>
+        <div class="big_divs2">
+            <div class="picture__part2"><img src="./img/nissan-at-home.webp" alt=""></div>
+        </div>
+        <div class="big_divs2">
+            <div class="picture__part2"><img src="./img/2023-nissan-altima-d-t.jpg" alt=""></div>
+            <div class="description__part">
+                <p class="something">THE NEW 2023 NISSAN ALTIMA®</p>
+                <p class="bring">Bringing Sport back to Sedan</p>
+                <p class="available__now">Available Now</p>
+                <button class="explore__next1">Explore <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="big_divs2">
+            <div class="picture__part2"><img src="./img/2023-nissan-versa.jpg" alt=""></div>
+            <div class="description__part">
+                <p class="something">THE NEW 2023 NISSAN VERSA®</p>
+                <p class="bring">Your bold starts now</p>
+                <p class="available__now">Coming Fall 2022</p>
+                <button class="explore__next1">Explore Versa <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

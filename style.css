@@ -39,8 +39,9 @@ body{
     border-bottom: 3px solid #f1f1f1;
 }
 .collection12{
-    display: flex;
+    display: grid;
     list-style: none;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 .collection12 .item12:hover{

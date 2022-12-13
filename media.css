@@ -33,9 +33,6 @@
     .collection1{
         margin-left: 200px;
     }
-    .item2{
-        display: none;
-    }
     .collection2{
         margin-left: 2%;
     }
@@ -47,9 +44,6 @@
 @media screen and (max-width: 1032px){
     .collection1{
         margin-left: 120px;
-    }
-    .collection2{
-        margin-left: 1%;
     }
 }
 @media screen and (max-width: 1020px){
@@ -75,12 +69,6 @@
     .collection1{
         display: none;
     }
-    .fa-bars{
-        display: block;
-    }
-    .smth{
-        display: block;
-    }
     .item4{
         margin-left: 80px;
     }
@@ -89,9 +77,6 @@
     }
 }
 @media screen and (max-width: 874px){
-    .collection1{
-        display: none;
-    }
     .fa-bars{
         display: block;
     }
@@ -101,18 +86,9 @@
     .collection12{
         margin-left: 570px;
     }
-    .item4{
-        margin-left: 80px;
-    }
-    .container3{
-        margin-left: 60px;
-    }
 }
 
 @media screen and (max-width: 842px){
-    .collection1{
-        display: none;
-    }
     .item4{
         margin-left: 67px;
     }
@@ -122,6 +98,7 @@
     }
     .icons_banner{
         height: 100%;
+        width: 100%;
     }
 }
 @media screen and (max-width: 842px){

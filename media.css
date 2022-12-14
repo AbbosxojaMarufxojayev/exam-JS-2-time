@@ -27,6 +27,7 @@
     }
     .banner6{
         grid-template-columns: 1fr;
+        padding: 0 0;
     }
 }
 @media screen and (max-width: 1140px){
@@ -183,7 +184,7 @@
     }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 444px){
     .our{
         text-align: center;
     }

@@ -21,8 +21,8 @@
                 <li class="item2">Locate Dealer <i class="fa-solid fa-chevron-down"></i></li>
                 <li class="item3"><button>Build & Price <i class="fa-solid fa-chevron-right"></i></button></li>
                 <li class="item3"><i class="fa-solid fa-message"></i></li>
-                <li class="item3">EN</li>
-                <li class="item3"><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li onclick="openLanguage()" class="item3 nimadir">EN</li>
+                <li onclick="openSearch()" class="item3"><i class="fa-solid fa-magnifying-glass"></i></li>
             </ul>
             <ul class="collection12">
                 <li class="item12"><i class="fa-solid fa-gear smth"></i></li>
@@ -116,9 +116,70 @@
             </div>   
         </div>
         <div class="shop_at_home__modal">
-            <div class="first_part"></div>
-            <div class="second_part"></div>
-            <div class="third_part"></div>
+            <div class="first_part">
+                <h1>Nissan<span class="first_one">@Home℠</span></h1>
+                <h3 class="shop_homee">SHOP<span class="first_one">@HOME</span></h3>
+                    <div class="mini__bar"><i class="fa-solid fa-gear"></i> <p>Build & Price</p></div>
+                    <div class="mini__bar"><i class="fa-solid fa-clipboard"></i> <p>View Offers</p></div>
+                    <ul class="collection100">
+                        <li class="item100">NissanConnect <i class="fa-solid fa-chevron-right"></i></li>
+                        <li class="item100">View a Brochure <i class="fa-solid fa-chevron-right"></i></li>
+                        <li class="item100">Locate a Dealer <i class="fa-solid fa-chevron-right"></i></li>
+                        <li class="item100">Compare Competitors <i class="fa-solid fa-chevron-right"></i></li>
+                        <li class="item100">Shop Accessories <i class="fa-solid fa-chevron-right"></i></li>
+                        <li class="item100">My Saved Builds <i class="fa-solid fa-chevron-right"></i></li>
+                    </ul>
+            </div>
+            <div class="second_part">
+                <div class="mini__bar1"><i class="fa-solid fa-clone"></i></div>
+                <div class="mini__bar1"><i class="fa-solid fa-calculator"></i></div>
+                <ul class="collection1001">
+                    <li class="item1001">Trade-in Value <i class="fa-solid fa-chevron-right"></i></li>
+                    <li class="item1001">Financing Options <i class="fa-solid fa-chevron-right"></i></li>
+                    <li class="item1001">Payment Options <i class="fa-solid fa-chevron-right"></i></li>
+                    <li class="item1001">Estimate Credit Score <i class="fa-solid fa-chevron-right"></i></li>
+                    <li class="item1001">Get Pre-Approved <i class="fa-solid fa-chevron-right"></i></li>
+                    <li class="item1001">Pre-Owned Benefits <i class="fa-solid fa-chevron-right"></i></li>
+                </ul>
+            </div>
+            <div class="third_part">
+                <div class="third_parts">
+                    <button class="btn__build">Build Your Nissan <i class="fa-solid fa-chevron-right"></i></button>
+                    <button onclick="clearShopAtX()" class="x">X</button>
+                    <div class="mini_thirds_father">
+                        <div class="mini_thirds">
+                            <div class="thirds_inner"><p>BUY<span>@HOME</span></p></div>
+                            <div class="thirds_picture"><img src="./img/nav-buy-at-home-1.jpg" alt=""></div>
+                            <div class="thirds_inner2">Purchase local inventory online from a participating dealer.*</div>
+                        </div>
+                        <div class="mini_thirds">
+                            <div class="thirds_inner"><p>DRIVE<span>@HOME</span></p></div>
+                            <div class="thirds_picture"><img src="./img/nav-buy-at-home-2.jpg" alt=""></div>
+                            <div class="thirds_inner2">Arrange a test drive online, that starts right outside your door.*</div>
+                        </div>
+                        <div class="mini_thirds">
+                            <div class="thirds_inner"><p>SERVICE<span>@HOME</span></p></div>
+                            <div class="thirds_picture"><img src="./img/nav-buy-at-home-3.jpg" alt=""></div>
+                            <div class="thirds_inner2">Let us pick up your vehicle from your home or office and return it to you when your service is complete.*</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="learn_more_part"><button class="btn_big">Learn more <i class="fa-solid fa-chevron-right"></i></button></div>
+            </div>
+        </div>
+        <div class="language">
+            <p class="choose_lan">Choose Your Language</p>
+            <div class="kk">
+                <button class="btn_language">English</button>
+                <button class="btn_language">Espanol</button>
+                <button class="btn_language">Chinese</button>
+                <button onclick="closeLanguage()" class="btn_language closelan">X</button>
+            </div>
+        </div>
+        <div class="search_banner">
+            <input type="text" placeholder="Search Nissan USA" class="big__inp">
+            <button class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button onclick="closeSearch()" class="closeXX">X</button>
         </div>
         <p class="peak">EVs that electrify</p>
         <p class="say">EVs don't just drive, they electrify</p>
@@ -238,7 +299,7 @@
                 <p class="ride">YOUR RIDE INTO THE ELECTRIC FUTURE</p>
                 <p class="search__pre">The All-New 2023 Nissan ARIYA</p>
                 <p class="ready">Expected availability for purchase late Fall 2022</p>
-                <button class="explore__next">Explore <i class="fa-solid fa-chevron-right"></i></button>
+                <button class="explore__next nima">Explore <i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
         <div class="big_divs">
@@ -281,8 +342,113 @@
             </div>
         </div>
     </div>
-
-
+    <h1 class="ll">Discover Nissan</h1>
+    <hr class="line">
+    <div class="banner7">
+        <div class="seven_div">
+            <div class="picture_parts1"><img src="./img/nissan-sustainability.webp" alt=""></div>
+            <div class="description_parts1">
+                <h3>SUSTAINABILITY & DIVERSITY</h3>
+                <p class="make">See how Nissan is making a difference</p>
+                <button class="btnhh">Learn More <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="seven_div">
+            <div class="picture_parts1"><img src="./img/2023-nissan-rogue-d.webp" alt=""></div>
+            <div class="description_parts1">
+                <h3>2023 Nissan Rogue®</h3>
+                <p class="make">Get to living. Go Rogue</p>
+                <button class="btnhh">Build & Price <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="seven_div">
+            <div class="picture_parts1"><img src="./img/3_steps_d.jpg" alt=""></div>
+            <div class="description_parts1">
+                <h3>IN 3 EASY STEPS</h3>
+                <p class="make">Estimate Your Trade In on a New Nissan</p>
+                <button class="btnhh">Estimate Value <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="last_banner">
+        <h1>Find Nissan Safety Recall & Service Campaign Information here:</h1>
+        <button class="last_btn">Explore <i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    <div class="footer">
+        <div class="mini_parts">
+            <h3>NISSAN AT HOME</h3>
+            <ul class="collection_footer">
+                <li class="item_footer">Get Started</li>
+                <li class="item_footer">All Vehicles</li>
+                <li class="item_footer">Build Your Nissan</li>
+                <li class="item_footer">Search Inventory</li>
+                <li class="item_footer">Locate a Dealer</li>
+                <li class="item_footer">View a Brochure</li>
+                <li class="item_footer">Estimate Payments</li>
+                <li class="item_footer">Compare Competitors</li>
+                <li class="item_footer">Get Internet Quote</li>
+                <li class="item_footer">Get Trade-in Value</li>
+            </ul>
+            <h3>SOCIAL</h3>
+            <div class="icons_footer">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+        <div class="mini_parts">
+            <h3>OWNING</h3>
+            <ul class="collection_footer">
+                <li class="item_footer">Owner Portal</li>
+                <li class="item_footer">Manuals & Guides</li>
+                <li class="item_footer">Parts & Accessories Online</li>
+                <li class="item_footer">NissanConnect</li>
+                <li class="item_footer">Nissan Service</li>
+                <li class="item_footer">Nissan Navigation Store</li>
+                <li class="item_footer">Collision Assistance</li>
+                <li class="item_footer">Nissan Finance Portal</li>
+                <li class="item_footer">Snug Kids</li>
+            </ul>
+        </div>
+        <div class="mini_parts">
+            <h3>ABOUT</h3>
+            <ul class="collection_footer">
+                <li class="item_footer">About Nissan</li>
+                <li class="item_footer">News & Events</li>
+                <li class="item_footer">Nissan Rental Car Program</li>
+                <li class="item_footer">Nissan Intelligent Mobility</li>
+                <li class="item_footer">Certified Pre-Owned</li>
+                <li class="item_footer">Local Nissan Offers</li>
+                <li class="item_footer">Accessibility</li>
+                <li class="item_footer">Cookie Settings</li>
+            </ul>
+        </div>
+        <div class="mini_parts">
+            <h3>BUSSINESS & FLEET</h3>
+            <ul class="collection_footer">
+                <li class="item_footer">Overview</li>
+                <li class="item_footer">Business Vehicles</li>
+                <li class="item_footer">Fleet</li>
+                <li class="item_footer">Offers & Financing</li>
+                <li class="item_footer">Program Benefits</li>
+                <li class="item_footer">Upfit & Accessories</li>
+                <li class="item_footer">For Dealers</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mini_footer">
+        <p>Home</p>
+        <p>Site Map</p>
+        <p>Contact Us</p>
+        <p>Do Not Sell My Personal Information</p>
+        <p>Legal</p>
+        <p>Privacy Policy</p>
+        <button class="recall">RECALL INFORMATION</button>
+        <p>© Nissan 2022</p>
+        <button class="feedback">FEEDBACK</button>
+    </div>
 
 
     <script src="./app.js"></script>
